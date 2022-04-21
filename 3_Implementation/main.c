@@ -18,7 +18,6 @@ unsigned int read_adc(unsigned char adc_input)
 {
 
 ADMUX=adc_input | (ADC_VREF_TYPE & 0xff);
-// Delay needed for the stabilization of the ADC input voltage
 delay_us(10);
 // Start the AD conversion
 ADCSRA|=0x40;
@@ -121,73 +120,37 @@ TIMSK0=(0<<OCIE0B) | (0<<OCIE0A) | (0<<TOIE0);
 
 // Timer/Counter 1 Interrupt(s) initialization
 TIMSK1=(0<<ICIE1) | (0<<OCIE1B) | (0<<OCIE1A) | (0<<TOIE1);
-
-// Timer/Counter 2 Interrupt(s) initialization
+ 
 TIMSK2=(0<<OCIE2B) | (0<<OCIE2A) | (0<<TOIE2);
-
-// External Interrupt(s) initialization
-// INT0: Off
-// INT1: Off
-// Interrupt on any change on pins PCINT0-7: Off
-// Interrupt on any change on pins PCINT8-14: Off
-// Interrupt on any change on pins PCINT16-23: Off
+ 
 EICRA=(0<<ISC11) | (0<<ISC10) | (0<<ISC01) | (0<<ISC00);
 EIMSK=(0<<INT1) | (0<<INT0);
 PCICR=(0<<PCIE2) | (0<<PCIE1) | (0<<PCIE0);
 
-// USART initialization
-// Communication Parameters: 8 Data, 1 Stop, No Parity
-// USART Receiver: On
-// USART Transmitter: On
-// USART0 Mode: Asynchronous
-// USART Baud Rate: 9600
+ 
 UCSR0A=(0<<RXC0) | (0<<TXC0) | (0<<UDRE0) | (0<<FE0) | (0<<DOR0) | (0<<UPE0) | (0<<U2X0) | (0<<MPCM0);
 UCSR0B=(0<<RXCIE0) | (0<<TXCIE0) | (0<<UDRIE0) | (1<<RXEN0) | (1<<TXEN0) | (0<<UCSZ02) | (0<<RXB80) | (0<<TXB80);
 UCSR0C=(0<<UMSEL01) | (0<<UMSEL00) | (0<<UPM01) | (0<<UPM00) | (0<<USBS0) | (1<<UCSZ01) | (1<<UCSZ00) | (0<<UCPOL0);
 UBRR0H=0x00;
 UBRR0L=0x33;
 
-// Analog Comparator initialization
-// Analog Comparator: Off
-// The Analog Comparator's positive input is
-// connected to the AIN0 pin
-// The Analog Comparator's negative input is
-// connected to the AIN1 pin
+ 
 ACSR=(1<<ACD) | (0<<ACBG) | (0<<ACO) | (0<<ACI) | (0<<ACIE) | (0<<ACIC) | (0<<ACIS1) | (0<<ACIS0);
-// Digital input buffer on AIN0: On
-// Digital input buffer on AIN1: On
+ 
 DIDR1=(0<<AIN0D) | (0<<AIN1D);
 
-// ADC initialization
-// ADC Clock frequency: 1000.000 kHz
-// ADC Voltage Reference: AVCC pin
-// ADC Auto Trigger Source: ADC Stopped
-// Digital input buffers on ADC0: On, ADC1: On, ADC2: On, ADC3: On
-// ADC4: On, ADC5: On
+ 
 DIDR0=(0<<ADC5D) | (0<<ADC4D) | (0<<ADC3D) | (0<<ADC2D) | (0<<ADC1D) | (0<<ADC0D);
 ADMUX=ADC_VREF_TYPE;
 ADCSRA=(1<<ADEN) | (0<<ADSC) | (0<<ADATE) | (0<<ADIF) | (0<<ADIE) | (0<<ADPS2) | (1<<ADPS1) | (1<<ADPS0);
 ADCSRB=(0<<ADTS2) | (0<<ADTS1) | (0<<ADTS0);
-
-// SPI initialization
-// SPI disabled
+ 
 SPCR=(0<<SPIE) | (0<<SPE) | (0<<DORD) | (0<<MSTR) | (0<<CPOL) | (0<<CPHA) | (0<<SPR1) | (0<<SPR0);
 
-// TWI initialization
-// TWI disabled
+
 TWCR=(0<<TWEA) | (0<<TWSTA) | (0<<TWSTO) | (0<<TWEN) | (0<<TWIE);
 
-// Alphanumeric LCD initialization
-// Connections are specified in the
-// Project|Configure|C Compiler|Libraries|Alphanumeric LCD menu:
-// RS - PORTC Bit 0
-// RD - PORTC Bit 1
-// EN - PORTC Bit 2
-// D4 - PORTD Bit 5
-// D5 - PORTD Bit 6
-// D6 - PORTD Bit 7
-// D7 - PORTB Bit 0
-// Characters/line: 16
+ 
 PORTD.2=0;
 lcd_init(16);
   lcd_gotoxy(0,0);
