@@ -1,17 +1,10 @@
-
 #include <mega328.h>
-
 #include <delay.h>
-
- #include <alcd.h>
-
- 
- #include <stdio.h>
+#include <alcd.h>
+#include <stdio.h>
 
 #define ADC_VREF_TYPE 0xC0
-
-
-  int T1,T2,T3;
+int T1,T2,T3;
 
 void adc_init(void)
 {
@@ -57,8 +50,7 @@ void sendtext(char *text) //for sending text
   delay_ms(100);
   }
 }
-
-// Declare your global variables here
+ 
 
 
  void num(unsigned int s)
@@ -81,8 +73,7 @@ void sendtext(char *text) //for sending text
 
 void main(void)
 {
-// Declare your local variables here
-
+ 
 // Crystal Oscillator division factor: 1
 #pragma optsize-
 CLKPR=(1<<CLKPCE);
@@ -241,16 +232,13 @@ lcd_init(16);
 
 while (1)
       {
-      // Place your code here
-      
-          T1=read_adc(5)/5;
+        T1=read_adc(5)/5;
         lcd_gotoxy(0,1);
         lcd_puts("GAS:");
         num(T1);
            PORTD.2=0; 
            PORTB.2=0; 
          
-           
               T2=read_adc(4);
         lcd_gotoxy(0,0);
         lcd_puts("PRESSURE:");
