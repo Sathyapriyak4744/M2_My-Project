@@ -1,6 +1,5 @@
 # Test case 1 : Gas Alert
-(T1>150)
-               {       
+(T1>150)    {       
                  PORTB.2=1;
                   lcd_gotoxy(0,0);
                   lcd_puts("GAS ALERT");
