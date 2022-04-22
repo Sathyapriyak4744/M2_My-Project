@@ -7,7 +7,6 @@
                  lcd_clear(); 
                
                }   
-
 # Test case 2 : Pressure Alert
 (T2<850)
                {       
@@ -18,7 +17,6 @@
                  lcd_clear(); 
                
                } 
-        
 # Test case 3 : High Volt Alert
 (PIND.4==0)
                {       
