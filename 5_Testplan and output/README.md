@@ -21,7 +21,7 @@
                } 
         
 # Test case 3 : High Volt Alert
-PIND.4==0)
+(PIND.4==0)
                {       
                
                   PORTB.1=1;
