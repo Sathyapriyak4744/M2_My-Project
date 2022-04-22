@@ -12,15 +12,15 @@ The objective of this project is to design and develop a wireless communication 
 3) This system mainly reduces the high manpower requirement in the industrial monitoring field by monitoring the overall industrial parameters through LCD
 
 # HIGH LEVEL REQUIREMENTS
- HLR 1---> Power supply unit
- HLR 2---> CO2 sensor
- HLR 3---> Pressure Sensor
- HLR 4---> LCD display - 16x2
- HLR 5---> Microcomtroller 
+1) HLR 1---> Power supply unit
+2) HLR 2---> CO2 sensor
+3) HLR 3---> Pressure Sensor
+4) HLR 4---> LCD display - 16x2
+5) HLR 5---> Microcomtroller 
  
 # LOW LEVEL REQUIREMENTS 
-LLR 1---> ATmega328
-LLR 2---> AVR GCC compiler
-LLR 3---> Simulide
+1) LLR 1---> ATmega328
+2) LLR 2---> AVR GCC compiler
+3) LLR 3---> Simulide
  
  
