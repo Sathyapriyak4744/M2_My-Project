@@ -73,5 +73,12 @@ Operates the co2 and pressure sensor
 2) LLR 2---> AVR GCC compiler
 3) LLR 3---> Simulide
  
- 
+# Working Principle
+The general objective of this project is to design the monitoring and control system of industrial parameters using wireless communication. This project is used to reduce the high manpower requirement in industries by monitoring the overall parameters through a LCDe. And also controls the parameters without any manual operation. Basically, this project is designed with microcontrollers and various sensors The control process will automatically take place, only if the parameter exceeds the fixed value. For an instance, the co2 is sensed by the sensor,. The sensed data is then sent to the controller.  Likewise the Pressure level is also sensed.Here, the ATmega 8A microcontroller performs various operations like converting the received analog signals into digital values with the help of in-built ADC converter, storing the data with the help of FLASH memory, etc. to monitor the sensed values through a LCD display connected with the microcontroller..
+
+
+
+
+
+
  
