@@ -15,3 +15,5 @@
 [![Build CI - Windows](https://github.com/Sathyapriyak4744/M2_My-Project/actions/workflows/Build_Windows.yml/badge.svg)](https://github.com/Sathyapriyak4744/M2_My-Project/actions/workflows/Build_Windows.yml)
 # Valgrind
 [![Valgrind](https://github.com/Sathyapriyak4744/M2_My-Project/actions/workflows/Valgrind.yml/badge.svg)](https://github.com/Sathyapriyak4744/M2_My-Project/actions/workflows/Valgrind.yml)
+# CI Passing
+[![CI](https://github.com/Sathyapriyak4744/M2_My-Project/actions/workflows/git_inspector.yml/badge.svg)](https://github.com/Sathyapriyak4744/M2_My-Project/actions/workflows/git_inspector.yml)
