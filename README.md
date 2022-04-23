@@ -17,3 +17,5 @@
 [![Valgrind](https://github.com/Sathyapriyak4744/M2_My-Project/actions/workflows/Valgrind.yml/badge.svg)](https://github.com/Sathyapriyak4744/M2_My-Project/actions/workflows/Valgrind.yml)
 # CI Passing
   [![CI](https://github.com/Sathyapriyak4744/M2_My-Project/actions/workflows/CI.yml/badge.svg)](https://github.com/Sathyapriyak4744/M2_My-Project/actions/workflows/CI.yml)
+# Unit testing
+[![Unit testing](https://github.com/Sathyapriyak4744/M2_My-Project/actions/workflows/Unit-test.yml/badge.svg)](https://github.com/Sathyapriyak4744/M2_My-Project/actions/workflows/Unit-test.yml)
