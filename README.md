@@ -11,3 +11,5 @@
 [![Analysis](https://github.com/Sathyapriyak4744/M2_My-Project/actions/workflows/Analysis.yml/badge.svg)](https://github.com/Sathyapriyak4744/M2_My-Project/actions/workflows/Analysis.yml)
 # cppcheck action
 [![cppcheck-action](https://github.com/Sathyapriyak4744/M2_My-Project/actions/workflows/cppcheck-action.yml/badge.svg)](https://github.com/Sathyapriyak4744/M2_My-Project/actions/workflows/cppcheck-action.yml)
+# Build-Windows
+[![Build CI - Windows](https://github.com/Sathyapriyak4744/M2_My-Project/actions/workflows/Build_Windows.yml/badge.svg)](https://github.com/Sathyapriyak4744/M2_My-Project/actions/workflows/Build_Windows.yml)
