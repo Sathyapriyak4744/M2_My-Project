@@ -13,3 +13,5 @@
 [![cppcheck-action](https://github.com/Sathyapriyak4744/M2_My-Project/actions/workflows/cppcheck-action.yml/badge.svg)](https://github.com/Sathyapriyak4744/M2_My-Project/actions/workflows/cppcheck-action.yml)
 # Build-Windows
 [![Build CI - Windows](https://github.com/Sathyapriyak4744/M2_My-Project/actions/workflows/Build_Windows.yml/badge.svg)](https://github.com/Sathyapriyak4744/M2_My-Project/actions/workflows/Build_Windows.yml)
+# Valgrind
+[![Valgrind](https://github.com/Sathyapriyak4744/M2_My-Project/actions/workflows/Valgrind.yml/badge.svg)](https://github.com/Sathyapriyak4744/M2_My-Project/actions/workflows/Valgrind.yml)
