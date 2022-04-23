@@ -77,6 +77,13 @@ Operates the co2 and pressure sensor
 The general objective of this project is to design the monitoring and control system of industrial parameters using wireless communication. This project is used to reduce the high manpower requirement in industries by monitoring the overall parameters through a LCDe. And also controls the parameters without any manual operation. Basically, this project is designed with microcontrollers and various sensors The control process will automatically take place, only if the parameter exceeds the fixed value. For an instance, the co2 is sensed by the sensor,. The sensed data is then sent to the controller.  Likewise the Pressure level is also sensed.Here, the ATmega 8A microcontroller performs various operations like converting the received analog signals into digital values with the help of in-built ADC converter, storing the data with the help of FLASH memory, etc. to monitor the sensed values through a LCD display connected with the microcontroller..
 
 
+# Proposed System
+The design and implementation of industrial parameter monitoring & controlling system is the model with the ability to perform data acquisition on co2 nadPressure level detector sensors attached. These are then sent to the controller and then to the control board members or technicians who are faraway from the machines
+
+# CONCLUSION
+This project demonstrates Design and Implementation of industrial parameter Monitoring & Controlling System used for controlling the devices as well as monitoring the environmental parameters. Embedded controlled sensor networks have proven themselves to be a reliable solution in providing remote control and sensing for environmental monitoring systems. The sensors have been integrated with the system to monitor and compute the level of existence of CO2 AND PRESSURE GASES in atmosphere using information and communication technologies
+
+
 
 
 
